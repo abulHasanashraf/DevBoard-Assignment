@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-[#F4F7FF]">
-    <header class="max-w-screen-2xl  mx-auto mt-5">
+    <header class="max-w-screen-2xl  mx-auto mt-5 mb-8">
         <!-- Navigation Part start -->
         <nav class="p-8 bg-white rounded-2xl">
             <div class="flex items-center  justify-between">
@@ -27,8 +27,55 @@
             </div>
         </nav>
     </header>
-    <main>
-
+    <main class="max-w-screen-2xl mx-auto mt-5 mb-8 ">
+        <!-- Task section -->
+        <section class="grid  grid-cols-3 gap-4">
+            <div class="h-96 col-span-2 p-6 bg-white mb-10">
+                <!-- task head -->
+                <div class="grid grid-cols-7 gap-4 mb-7">
+                    <div class="bg-[#F4F7FF] p-8 rounded-xl flex items-center gap-6 col-span-2">
+                        <button class="p-4 bg-white rounded-[32px]">
+                            <img src="./assets/checkbox.png" alt="checkbox">
+                        </button>
+                        <div>
+                            <p class="text-[#00303C] text-sm">Task Assigned</p>
+                            <h2 class="text-2xl font-bold text-[#00303C]">05</h2> 
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] p-8 rounded-xl flex items-center gap-6 col-span-3">
+                        <img src="./assets/board.png" alt="Board picture">
+                        <div>
+                            <h2 class="text-2xl font-semibold text-white">Discover Something New Today!</h2>
+                        </div>
+                    </div>
+                    <div class="bg-[#F4F7FF] p-8 rounded-xl flex items-center gap-6 col-span-2">
+                        <button class="p-4 bg-white rounded-[32px]">
+                            <img src="./assets/calender.png" alt="Calender Logo">
+                        </button>
+                        <div>
+                            <p class="text-[#00303C] text-xl">Wed,</p>
+                            <h2 class="text-xl font-bold text-[#00303C]">Jul 28 2025 </h2> 
+                        </div>
+                    </div>
+                    
+                </div>
+                <hr>
+                <!-- task content -->
+            </div>
+        <!-- Activity Log -->
+            <div class="h-96 col-span-1 p-6 bg-white ">
+                <div class="flex flex-col gap-4 items-center mb-7">
+                    <div class="flex gap-5 text-[#00303C] text-xl font-semibold">
+                        <img src="./assets/activity.png" alt="activity-logo">
+                        <p>Activity Log</p>
+                    </div>
+                    <div>
+                        <button class="p-4 rounded-xl bg-[#3752FD] text-xl font-semibold text-white">Clear History</button>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </section>
     </main>
 </body>
 </html>
